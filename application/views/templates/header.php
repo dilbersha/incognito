@@ -9,10 +9,11 @@
 
    <script  src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
    <script  src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
+   <link href="https://fonts.googleapis.com/css?family=Expletus+Sans:400,500,600,700" rel="stylesheet">
 
 </head>
-<body style="color:#ffffff; background-color:#000000">
-<nav class="navbar navbar-inverse " role="navigation">
+<body class="back">
+<nav class="opac navbar navbar-inverse " role="navigation">
 <div class="navbar-header">
 <button type="button" class="navbar-toggle" data-toggle="collapse"
 data-target=".navbar-collapse">
@@ -27,16 +28,16 @@ data-target=".navbar-collapse">
 </div>
 <div class="collapse navbar-collapse" >
 <ul class="nav navbar-nav">
-<li class=" Dagger <?php echo $acthome ?>"><a href="<?php echo base_url()?>">Home</a></li>
-<li class="Dagger <?php echo $actleaderboard ?>"><a href="<?php echo base_url('leaderboard')?>">Leaderboard</a></li>
-<li class="Dagger "><a href="<?php echo base_url('clues')?>" target="_blank">Clues</a></li>
-<li class="Dagger <?php echo $actrules ?>"><a href="<?php echo base_url('rules')?>">Rules</a></li>
+<li class=" Dagger600 <?php echo $acthome ?>"><a href="<?php echo base_url()?>">Home</a></li>
+<li class="Dagger600 <?php echo $actleaderboard ?>"><a href="<?php echo base_url('index.php/leaderboard')?>">Leaderboard</a></li>
+<li class="Dagger600 "><a href="<?php echo base_url('index.php/clues')?>" target="_blank">Clues</a></li>
+<li class="Dagger600 <?php echo $actrules ?>"><a href="<?php echo base_url('index.php/rules')?>">Rules</a></li>
 <?php
 $this->load->library('session');
 $user_id=$this->session->userdata('userid');
 if($user_id!=FALSE) : ?>
-<li class="Dagger <?php echo $actstory ?>"><a href="<?php echo base_url('story')?>">Story so far</a></li>
-<li class="Dagger <?php echo $actprof ?>"><a href="<?php echo base_url('profile')?>">Profile</a></li>
+<li class="Dagger <?php echo $actstory ?>"><a href="<?php echo base_url('index.php/story')?>">Story so far</a></li>
+<li class="Dagger <?php echo $actprof ?>"><a href="<?php echo base_url('index.php/profile')?>">Profile</a></li>
 
 
 </ul>

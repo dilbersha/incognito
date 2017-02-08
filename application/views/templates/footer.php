@@ -1,4 +1,7 @@
-<div style="margin-top:40px">
+<div class="text-center">
+
+	<img class="conjura" src="<?php echo base_url('assets/img/conjura.png');?>"> </img>
+
 </div>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
