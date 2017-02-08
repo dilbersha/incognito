@@ -48,11 +48,11 @@
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['hostname'] = 'HOSTNAME';
-$db['default']['username'] = 'USERNAME';
-$db['default']['password'] = 'PASSWORD';
-$db['default']['database'] = 'DATABASE_NAME';
-$db['default']['dbdriver'] = 'mysql';
+$db['default']['hostname'] = '';
+$db['default']['username'] = 'root';
+$db['default']['password'] = '';
+$db['default']['database'] = 'incognito';
+$db['default']['dbdriver'] = 'mysqli';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
 $db['default']['db_debug'] = FALSE;
