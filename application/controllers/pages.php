@@ -374,13 +374,13 @@ class Pages extends CI_Controller {
             $msg = array(
                 'access_token'  => $token,
                 'message' => 'Try out an exciting online treasure hunt!',
-                'link' => 'http://incognito.tezoro.org'
+                'link' => 'http://incognito.conjura.in'
                 );
         }else{
             $msg = array(
                 'access_token'  => $token,
                 'message' => 'I\'ve finished Level '.$level.' of this awesome online treasure hunt.',
-                'link' => 'http://incognito.tezoro.org'
+                'link' => 'http://incognito.conjura.in'
                 );
         }
    
@@ -469,7 +469,7 @@ class Pages extends CI_Controller {
     }
     public function clues()
     {
-        redirect('https://www.facebook.com/incognito.tezoro','location');
+        redirect('https://www.facebook.com/Incognito-Conjura','location');
         /*$this->load->library('session');
         $this->load->model('users_model');
         $data['clue_data']=$this->users_model->get_clues();
