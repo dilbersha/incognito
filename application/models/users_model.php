@@ -12,7 +12,7 @@ class Users_model extends CI_Model {
 
 	}
 
-	public function get_level($level=NULL)
+	public function get_level($level=NULL)      //to be optimised .fetching ques
 
 	{
 
@@ -35,41 +35,22 @@ class Users_model extends CI_Model {
 		}*/
 		if($level==NULL)
 			return NULL;
-
 		$leveldata=$this->db->get_where('levels',array('level'=>$level));
-
 		if($leveldata->num_rows()>0)
-
 		{
-
 			$row=$leveldata->row_array();
-
 			if($row['active']==0)
-
-			{
-
 				return NULL;
-
-			}
-
 			return $row;
-
 		}
-
 		return NULL;
-
 	}
 
 	public function get_levels()
-
 	{
-
 		$this->db->order_by('level desc'); 
-
 		$leveldata=$this->db->get('levels');
-
 		return $leveldata->result_array();
-
 	}
 
 	public function get_userdata($userid=FALSE)
@@ -78,7 +59,7 @@ class Users_model extends CI_Model {
 
 		$userdata=$this->db->get_where('userlist',array('fb_userid'=>$userid));
 
-		if($userdata->num_rows()>0)
+		if($userdata->num_rows()>0)      
 
 		{
 
@@ -658,7 +639,7 @@ class Users_model extends CI_Model {
 
 
 	}
-	public function nextphase($userid=NULL)
+	public function nextphase($userid=NULL)      //hard coded
 	{
 		if($userid==NULL)
 			return;

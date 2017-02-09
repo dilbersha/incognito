@@ -6,8 +6,7 @@ class Pages extends CI_Controller {
     {
         parent::_construct();
         $this->load->helper('url');
-         $this->load->model('users_model');
-
+        $this->load->model('users_model');
     }
 
     public function view($page = 'home')
@@ -28,13 +27,11 @@ class Pages extends CI_Controller {
        $data['actrules']='';
        $data['actprof']='';
        $data['actstory']='';
-
        $userid=$this->session->userdata('userid');
        $userdata=$this->users_model->get_userdata($userid);
        $data['phase']=$userdata['phase'];
         if($userid==FALSE)
         {
-           
             $data['login_url'] = $this->facebook->getLoginUrl(array(
             'redirect_uri' => site_url('pages/login'), 
             'scope' => 'email, publish_actions',
@@ -42,8 +39,6 @@ class Pages extends CI_Controller {
             ));
             $data['title']='Login';
             $page='home';  
-            
-
         }
         else
         {
@@ -71,7 +66,7 @@ class Pages extends CI_Controller {
                 );
                 $this->input->set_cookie($cookie); 
             }
-            if($level_data!=NULL)
+            if($level_data!=NULL)			//hard coded
             {
                 $page='arena'; 
                 if(($userdata['level']==16)&&($userdata['phase']!=1))
@@ -80,7 +75,7 @@ class Pages extends CI_Controller {
                     $page='jump';
                 }
             }
-            else
+            else		       // ?????????
             {
                 $state='0';
                 $leveldata=$this->users_model->get_levels();
@@ -610,12 +605,11 @@ class Pages extends CI_Controller {
    }
    public function jumptonext()
    {
-          $this->load->model('users_model');
+        $this->load->model('users_model');         //not reqd.???
         $this->load->library('session');
         $userid=$this->session->userdata('userid');
         $this->users_model->nextphase($userid);
         redirect('pages/viewstory','location');
-
    }
 
     public function levels(){
@@ -690,11 +684,10 @@ class Pages extends CI_Controller {
             exit;
         }
         if($userdata['status']==-1)
-        {
             redirect('','location');
-        }
+        
         $stlevel=$this->users_model->get_storylevel($stno);
-
+        
         if($stlevel<=$userdata['level'])
         {
             if(!file_exists('./assets/story/story'.$story['storyid'].$story['imgid'].'.jpg'))
@@ -716,7 +709,4 @@ class Pages extends CI_Controller {
              redirect('','location');
         }      
     }
-
-
-
 }
