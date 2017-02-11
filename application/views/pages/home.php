@@ -16,7 +16,7 @@
 
 		<div class="text-center mt15" >
 
-			<a href="<?php echo $login_url ?>" class="buttonfb btn btn-lg btn-primary Dagger colwhite" role="button">login with Facebook</a>
+			<a href="<?php echo $login_url ?>" class="buttonfb btn btn-lg btn-primary Dagger colwhite" role="button">Login with Facebook</a>
 
 		</div>
 
