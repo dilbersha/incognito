@@ -26,19 +26,19 @@ $(document).ready(function(){
 
 <div class="container">
 
-	<div class="col-md-10 col-md-offset-1 ">
+	<div>
 
 		<div class="row">
 
-		<div class="text-center col-sm-1 col-sm-offset-4"  id="home">
+		<div class="text-center col-xs-6"  id="home">
 
-			<a href="#home" class="buttonfb btn btn-lg btn-primary Dagger" role="button">HOME</a>
+			<a href="#home" class="buttonlb btn btn-lg btn-primary Dagger colwhite" role="button">HOME</a>
 
 		</div>
 
-		<div class="text-center col-sm-1 col-sm-offset-1" id="away">
+		<div class="text-center col-xs-6" id="away">
 
-			<a href="#away" class="buttonfb btn btn-lg btn-primary Dagger" role="button">AWAY</a>
+			<a href="#away" class="buttonlbAct buttonlb btn btn-lg btn-primary Dagger colwhite" role="button">AWAY</a>
 
 		</div>
 
@@ -46,7 +46,7 @@ $(document).ready(function(){
 
 
 
-<table class="table" id="regular" style="margin-top:60px">
+<table class="colwhite table" id="regular" style="margin-top:60px">
 
 <thead>
 
@@ -118,7 +118,7 @@ else
 
 
 
-<table class="table" id="tkm" style="margin-top:60px; display:none">
+<table class="colwhite table" id="tkm" style="margin-top:60px; display:none">
 
 <thead>
 

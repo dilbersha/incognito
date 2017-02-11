@@ -5,10 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link href="<?php echo base_url('assets/css/bootstrap.min.css') ?>" rel="stylesheet">
    <link href="<?php echo base_url('assets/css/style.css') ?>" rel="stylesheet">
-      <link href="<?php echo base_url('assets/css/incognitostyle.css') ?>" rel="stylesheet">
+     <link href="<?php echo base_url('assets/css/incognitostyle.css') ?>" rel="stylesheet">
 
    <script  src="<?php echo base_url('assets/js/jquery.min.js') ?>"></script>
    <script  src="<?php echo base_url('assets/js/bootstrap.min.js') ?>"></script>
+   <script  src="<?php echo base_url('assets/js/init.js') ?>"></script>
    <link href="https://fonts.googleapis.com/css?family=Expletus+Sans:400,500,600,700" rel="stylesheet">
 
 </head>
