@@ -398,6 +398,7 @@ class Pages extends CI_Controller {
         $this->load->library('session');
         $this->load->model('users_model');
         $this->config->load('leaderboard');
+        //$this->output->enable_profiler(TRUE); // uncomment this line to check no of queries run
         $data['acthome']='';
         $data['actleaderboard']='active';
         $data['actcluebox']='';
