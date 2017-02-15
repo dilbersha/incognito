@@ -19,6 +19,7 @@ class Pages extends CI_Controller {
        $this->load->helper('url');
        $this->load->helper('form');
        $this->load->library('form_validation');
+       $this->output->enable_profiler(TRUE);
        $this->form_validation->set_rules('college', 'College', 'required');
        $this->form_validation->set_rules('emailid', 'Email ID', 'required');
        $data['acthome']='active';
