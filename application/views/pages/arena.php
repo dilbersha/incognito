@@ -6,13 +6,13 @@
 
   <div class="row">
  <div class="text-center">
-      <img src="<?php echo base_url('levels/'.$level['question']) ?>"
+      <img src="<?php echo base_url('index.php/levels/'.$level['question']) ?>"
 
-      class="img-rounded col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 " style="border-style:solid; border-color:#0bffff; border-width:2px">
+      class="img-rounded col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 " style="border-style:solid; border-color:rgba(255,255,255,0.2); border-width:15px;padding:0;border-radius: 0px;">
  </div>
- <div class="col-sm-offset-10">
+ <!--<div class="col-sm-offset-10">
         <button  id="hint" class="btn btn-lg btn-info Dagger " type="button" data-toggle="modal" data-target="#myModal">CREDITS</button>
-  </div>
+  </div>-->
   </div>
 
   <br>
@@ -21,17 +21,17 @@
 
   <div class="row">
 
-      <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+      <div class="nopadding col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
 
         <?php echo form_open('pages/answer',array('role'=>'form')) ?>        
 
-          <div class="input-group input-group-lg">
+          <div class=" input-group input-group-lg">
 
-            <input type="text" name="answer" value="" class="form-control" placeholder="<?php echo $level['textbox_clue']?> "  />           
+            <input type="text" name="answer" style="border-radius: 0px;" value="" class="inputSubmit form-control" placeholder="<?php echo $level['textbox_clue']?> "  />           
 
             <span class="input-group-btn">
 
-              <button class="btn Dagger colblack" type="submit">Submit</button>
+              <button class="submitBtn btn Dagger colblack" style="border-radius: 0px;" type="submit">Submit</button>
 
             </span>
 

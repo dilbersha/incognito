@@ -32,13 +32,13 @@ $(document).ready(function(){
 
 		<div class="text-center col-xs-6"  id="home">
 
-			<a href="#home" class="buttonlb btn btn-lg btn-primary Dagger colwhite" role="button">HOME</a>
+			<a href="#home" class="buttonlb btnlbLarge Dagger  btn btn-lg btn-primary  colwhite" role="button">HOME</a>
 
 		</div>
 
 		<div class="text-center col-xs-6" id="away">
 
-			<a href="#away" class="buttonlbAct buttonlb btn btn-lg btn-primary Dagger colwhite" role="button">AWAY</a>
+			<a href="#away" class="buttonlbAct btnlbLarge Dagger buttonlb btn btn-lg btn-primary colwhite" role="button">AWAY</a>
 
 		</div>
 
