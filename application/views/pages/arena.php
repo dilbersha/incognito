@@ -2,7 +2,7 @@
 
 <?php echo validation_errors(); ?>
 
-<div class="container">
+<div class="container" style="max-width: 780px;">
 
   <div class="row">
  <div class="text-center">
@@ -10,9 +10,7 @@
 
       class="img-rounded col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 " style="border-style:solid; border-color:rgba(255,255,255,0.2); border-width:15px;padding:0;border-radius: 0px;">
  </div>
- <!--<div class="col-sm-offset-10">
-        <button  id="hint" class="btn btn-lg btn-info Dagger " type="button" data-toggle="modal" data-target="#myModal">CREDITS</button>
-  </div>-->
+
   </div>
 
   <br>
