@@ -47,9 +47,11 @@ class Users_model extends CI_Model {
 	}
 
 	public function get_levels()
-	{
+	{	
+		$this->db->cache_on();
 		$this->db->order_by('level desc'); 
 		$leveldata=$this->db->get('levels');
+		$this->db->cache_off();
 		return $leveldata->result_array();
 	}
 
