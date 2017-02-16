@@ -11,8 +11,6 @@ class Pages extends CI_Controller {
 
     public function view($page = 'home')
     {
-        
-
        $this->load->library('session');
        $this->load->library('facebook');
        $this->load->model('users_model');
@@ -27,7 +25,7 @@ class Pages extends CI_Controller {
        $data['actrules']='';
        $data['actprof']='';
        $data['actstory']='';
-       $userid=$this->session->userdata('userid');
+       $userid=$this->session->userdata('userid');     // where it is stored
        $userdata=$this->users_model->get_userdata($userid);
        $data['phase']=$userdata['phase'];
         if($userid==FALSE)
@@ -65,10 +63,11 @@ class Pages extends CI_Controller {
                 );
                 $this->input->set_cookie($cookie); 
             }
+            
             if($level_data!=NULL)			//hard coded
             {
                 $page='arena'; 
-                if(($userdata['level']==16)&&($userdata['phase']!=1))
+                if(($userdata['level']==16)&&($userdata['phase']!=1))  
                 {
                     $data['title']='Start Phase 2';
                     $page='jump';
@@ -107,9 +106,9 @@ class Pages extends CI_Controller {
         $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer', $data);           
     }
+    
     public function login()
     {
-
         $this->load->library('session');
         $this->load->library('facebook');
         $this->load->model('users_model');
@@ -123,12 +122,12 @@ class Pages extends CI_Controller {
         $data['actrules']='';
         $data['actprof']='';
         $data['actstory']='';
-        $user = $this->facebook->getUser();        
+        $user = $this->facebook->getUser();        //??
         if ($user) 
         {
             try 
             {
-                $data['user_profile'] = $this->facebook->api('/me');
+                $data['user_profile'] = $this->facebook->api('/me');   //??
             } 
             catch (FacebookApiException $e) 
             {
