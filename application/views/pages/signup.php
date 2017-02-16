@@ -4,21 +4,21 @@
 	<div class="formheight form-group">
 		
 		<div class="col-sm-offset-3 col-sm-6">
-			<input type="text" class="form-control" name="college"
+			<input type="text" class="inputSubmit form-control" name="college"
 				placeholder="Enter College Name">
 		</div>
 	</div>
 	<div class="form-group">
 		
 		<div class="col-sm-offset-3 col-sm-6">
-			<input type="text" class="form-control" name="emailid"
+			<input type="text" class="inputSubmit form-control" name="emailid"
 				placeholder="Enter Email Id">
 		</div>
 	</div>
 	<div class="form-group">
 		
 		<div class="col-sm-offset-3 col-sm-6">
-			<input type="text" class="form-control" name="mobileno"
+			<input type="text" class="inputSubmit form-control" name="mobileno"
 				placeholder="Enter Moblie No">
 		</div>
 	</div>
