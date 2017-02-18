@@ -37,7 +37,6 @@ data-target=".navbar-collapse">
 $this->load->library('session');
 $user_id=$this->session->userdata('userid');
 if($user_id!=FALSE) : ?>
-<li class="Dagger600 <?php echo $actstory ?>"><a href="<?php echo base_url('index.php/story')?>">Story so far</a></li>
 <li class="Dagger600 <?php echo $actprof ?>"><a href="<?php echo base_url('index.php/profile')?>">Profile</a></li>
 
 
