@@ -24,7 +24,7 @@ class Pages extends CI_Controller {
        $data['actcluebox']='';
        $data['actrules']='';
        $data['actprof']='';
-       $data['actstory']='';
+       //$data['actstory']='';
        $userid=$this->session->userdata('userid');     // where it is stored
        $userdata=$this->users_model->get_userdata($userid);
        $data['phase']=$userdata['phase'];
@@ -121,7 +121,7 @@ class Pages extends CI_Controller {
         $data['actcluebox']='';
         $data['actrules']='';
         $data['actprof']='';
-        $data['actstory']='';
+        //$data['actstory']='';
         $user = $this->facebook->getUser();        //??
         if ($user) 
         {
@@ -226,7 +226,7 @@ class Pages extends CI_Controller {
         $data['actcluebox']='';
         $data['actrules']='';
         $data['actprof']=''; 
-        $data['actstory']='';     
+        //$data['actstory']='';     
         if ($userid!=NULL) 
         {
            
@@ -300,7 +300,7 @@ class Pages extends CI_Controller {
         $data['actcluebox']='';
         $data['actrules']='';
         $data['actprof']='';
-        $data['actstory']='';
+        //$data['actstory']='';
         if($result!=FALSE)
         {
              $data['img']=$result;
@@ -401,7 +401,7 @@ class Pages extends CI_Controller {
         $data['actcluebox']='';
         $data['actrules']='';
         $data['actprof']='';
-        $data['actstory']='';
+        //$data['actstory']='';
         $page='leaderboard';
         $data['title']='Leaderboard';
         $data['nop']=$this->config->item('leaderboard');
@@ -517,7 +517,7 @@ class Pages extends CI_Controller {
         $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer', $data);
     }
-    public function story()
+    /*public function story()
     {
         $this->load->library('session');
         $this->load->library('pagination');
@@ -582,9 +582,9 @@ class Pages extends CI_Controller {
         $this->load->view('templates/header', $data);
         $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer', $data);
-    }
+    }*/
 
-    public function viewstory()
+    /*public function viewstory()
     {
         $this->load->model('users_model');
         $this->load->library('session');
@@ -600,7 +600,7 @@ class Pages extends CI_Controller {
         else
           redirect('','location');
         redirect(base_url('index.php/story/'.$story['id']),'location');
-   }
+   }*/
    public function jumptonext()
    {
         $this->load->model('users_model');         //not reqd.???
@@ -652,7 +652,7 @@ class Pages extends CI_Controller {
         }      
     }
 
-    public function storyimg(){
+    /*public function storyimg(){
         $stno=$this->uri->segment(3, 0);
         $this->load->library('session');
         $userid=$this->session->userdata('userid');
@@ -706,5 +706,5 @@ class Pages extends CI_Controller {
         {
              redirect('','location');
         }      
-    }
+    }*/
 }
