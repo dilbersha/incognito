@@ -488,7 +488,7 @@ class Pages extends CI_Controller {
         $data['actcluebox']='';
         $data['actrules']='active';
         $data['actprof']='';
-        $data['actstory']='';
+        //$data['actstory']='';
         $this->load->view('templates/header', $data);
         $this->load->view('pages/'.$page, $data);
         $this->load->view('templates/footer', $data);
@@ -510,7 +510,7 @@ class Pages extends CI_Controller {
         $data['actcluebox']='';
         $data['actrules']='';
         $data['actprof']='active';      
-        $data['actstory']='';
+        //$data['actstory']='';
         $data['userdata']=$this->users_model->get_userdata($userid);
         $data['rank']=$this->users_model->get_rank();
         $this->load->view('templates/header', $data);
