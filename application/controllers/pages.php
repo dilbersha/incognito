@@ -87,8 +87,8 @@ class Pages extends CI_Controller {
                 } 
                 if($state==1)
                 {
-                    $data['title']='Congratulations';
-                    $page='top';
+                    $data['title']='Sorry';
+                    $page='update';
                 }
                 else
                 {

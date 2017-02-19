@@ -656,6 +656,7 @@ class Users_model extends CI_Model {
 			redirect('','location');
 
 		}
+		//// CHange when phase 1 completes
 		if(($userrow['level']<=16)&&($userrow['phase']!=1))
 		{
 			$userrow['level']=16;
