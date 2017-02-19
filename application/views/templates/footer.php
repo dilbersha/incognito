@@ -20,7 +20,7 @@
             <h4 class="Dagger colwhite">Event Coordinators</h4>
           </div>
           <div class="row">
-             <a href="https://www.facebook.com/jerry.j.sebastian"><img class="" src="<?php echo base_url('assets/img/img8.jpg')?>"></a>
+             <a href="https://www.facebook.com/jerry.j.sebastian"><img class="" src="<?php echo base_url('assets/img/img1.jpg')?>"></a>
               
           </div>
                    <div class="row">
@@ -31,7 +31,7 @@
             <h4 class="Dagger colwhite">Front End Design</h4>
           </div>
           <div class="row">
-            <a href="https://www.facebook.com/ba517h"><img class="" src="<?php echo base_url('assets/img/img7.jpg')?>"></a>
+            <a href="https://www.facebook.com/ba517h"><img class="" src="<?php echo base_url('assets/img/img2.jpg')?>"></a>
           </div>
                                       <div class="row">
              <p class="Dagger colwhite">Mohammed Basith</p>
