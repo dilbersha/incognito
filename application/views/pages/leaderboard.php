@@ -76,7 +76,7 @@ $(document).ready(function(){
 
 <tr>
 
-<td><?php echo $user['rank'];?> </td>
+<td style="text-align: center;"><?php echo $user['rank'];?> </td>
 
 <td><?php 
 
@@ -146,7 +146,7 @@ else
 
 <tr>
 
-<td><?php echo $user['rank'];?> </td>
+<td style="text-align: center;"><?php echo $user['rank'];?> </td>
 
 <td><?php 
 
