@@ -12,7 +12,7 @@
 
 			<br>
 
-			<li><h3 class="DaggerItalic colblue">Every 5th level will require you to provide a lead to the story from the decrypted data of previous levels. So be alert. The lead is hiding out there. Spot it. And help the agents out there.</h3></li>
+			<li><h3 class="DaggerItalic colblue">There will be 3 phases for the game and each phase will have a winner</h3></li>
 
 			<br>
 
@@ -20,7 +20,7 @@
 
 			<br>
 
-			<li><h3 class="Dagger colwhite">Clues for the levels maybe found on incognito page, source code, cookies etc.</h3></li>
+			<li><h3 class="Dagger colwhite">Clues for the levels maybe found on Incognito Facebook page</h3></li>
 
 			<br>
 

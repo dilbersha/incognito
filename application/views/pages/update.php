@@ -6,7 +6,7 @@
 
 			<h1 class="Dagger colblue">
 
-				Sorry For The Incovenience.
+				You are at the highest level.
 
 			</h1>
 
@@ -20,9 +20,8 @@
 
 			<h1 class="Dagger colwhite">
 
-				Site Is Under Updation.<br>
+				Wait till your next challenge is set.<br>
 
-								Please check after sometime.
 
 			</h1>
 

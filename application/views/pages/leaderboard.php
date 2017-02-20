@@ -48,6 +48,8 @@ $(document).ready(function(){
 
 <table class="colwhite table" id="regular" style="margin-top:60px">
 
+
+
 <thead>
 
 <tr>

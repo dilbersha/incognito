@@ -201,7 +201,7 @@ class Pages extends CI_Controller {
                         );
         $this->session->set_userdata($newdata);
         $this->posttofb();
-        redirect('pages/viewstory','location');
+        redirect('pages/view','location');
         }
         else
         {
@@ -319,9 +319,9 @@ class Pages extends CI_Controller {
             $this->input->set_cookie($cookie); 
             $userdata=$this->users_model->get_userdata($userid);
             $this->posttofb('pass',$userdata['level']);
-
+	    $data['level']=$userdata['level'];
         }
-
+	
         $data['result']=$result;
         $data['title']='Answer';
         $page='answer';
@@ -607,7 +607,7 @@ class Pages extends CI_Controller {
         $this->load->library('session');
         $userid=$this->session->userdata('userid');
         $this->users_model->nextphase($userid);
-        redirect('pages/viewstory','location');
+        redirect('pages/view','location');
    }
 
     public function levels(){
