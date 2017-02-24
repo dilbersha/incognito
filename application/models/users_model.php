@@ -657,11 +657,11 @@ class Users_model extends CI_Model {
 
 		}
 		//// CHange when phase 1 completes
-		if(($userrow['level']<=16)&&($userrow['phase']!=1))
+		if(($userrow['level']<=21)&&($userrow['phase']!=2))
 		{
-			$userrow['level']=16;
+			$userrow['level']=21;
 
-			$userrow['phase']=1;
+			$userrow['phase']=2;
 			$org_time=time();
 
 		$ind_time=$org_time+19800;

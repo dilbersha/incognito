@@ -67,7 +67,7 @@ class Pages extends CI_Controller {
             if($level_data!=NULL)			//hard coded
             {
                 $page='arena'; 
-                if(($userdata['level']==16)&&($userdata['phase']!=1))  
+                if(($userdata['level']<=21)&&($userdata['phase']!=2))  
                 {
                     $data['title']='Start Phase 2';
                     $page='jump';
