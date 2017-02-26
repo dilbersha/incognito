@@ -40,7 +40,7 @@
       </div>
 
     </div>
-     <?php if($phase!=1):?>
+     <?php if($phase!=2):?>
      <div class="row">
        <div class="text-center" style="margin-top:75px">
           <a href="<?php echo base_url('jumptonext')?>" class="btn Dagger btn-lg btn-success" role="button">JUMP TO NEXT PHASE</a>
