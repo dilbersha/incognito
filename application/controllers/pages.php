@@ -73,7 +73,7 @@ class Pages extends CI_Controller {
                     $page='jump';
                 }
             }
-            else		       // ?????????
+            else		       // ????????
             {
                 $state='0';
                 $leveldata=$this->users_model->get_levels();
