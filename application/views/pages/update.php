@@ -6,7 +6,7 @@
 
 			<h1 class="Dagger colblue">
 
-				You are at the highest level.
+				You made it. Catch a breath now. But the hunt is far from over.
 
 			</h1>
 
@@ -20,7 +20,7 @@
 
 			<h1 class="Dagger colwhite">
 
-				Wait till your next challenge is set.<br>
+				<br>
 				
 
 			</h1>
