@@ -20,8 +20,8 @@
 
 			<h1 class="Dagger colwhite">
 
-				<br>
-				
+				The maze shall shall reset itself on Sunday, at 9PM<br>
+					See you then!
 
 			</h1>
 
