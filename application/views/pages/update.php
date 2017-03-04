@@ -6,7 +6,7 @@
 
 			<h1 class="Dagger colblue">
 
-				You made it. Catch a breath now. But the hunt is far from over.
+				You are at the highest level.
 
 			</h1>
 
@@ -20,8 +20,8 @@
 
 			<h1 class="Dagger colwhite">
 
-				The maze shall shall reset itself on Sunday, at 9PM<br>
-					See you then!
+				Wait till your next challenge is set<br>
+
 
 			</h1>
 
