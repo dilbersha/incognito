@@ -62,6 +62,5 @@ $route['login/(:any)'] = "pages/login";
 $route['levels/(:any)'] = "pages/levels";
 $route['jumptonext/(:any)']="pages/jumptonext";
 
-
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

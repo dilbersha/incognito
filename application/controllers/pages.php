@@ -69,11 +69,11 @@ class Pages extends CI_Controller {
                 $page='arena'; 
                 if(($userdata['level']<=41)&&($userdata['phase']!=3))  
                 {
-                    $data['title']='Start Phase 2';
+                    $data['title']='Start Phase 3';
                     $page='jump';
                 }
             }
-            else		       // ????????
+            else		       // ????????21
             {
                 $state='0';
                 $leveldata=$this->users_model->get_levels();
@@ -107,6 +107,7 @@ class Pages extends CI_Controller {
         $this->load->view('templates/footer', $data);           
     }
     
+
     public function login()
     {
         $this->load->library('session');
@@ -630,6 +631,7 @@ class Pages extends CI_Controller {
         }
         $question='level_'.$userdata['level'].'.jpg';
         $finish='finish_'.($userdata['level']-1).'.jpg';
+        
         if(!strcmp($file_name,$question)||!strcmp($file_name,$finish))
         {
             if(!file_exists('./assets/levels/'.$file_name))

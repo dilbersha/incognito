@@ -1,0 +1,1 @@
+<?php echo echo file_get_contents('./assets/levels/incog.png')?>
