@@ -6,7 +6,7 @@
 
 			<h1 class="Dagger colblue">
 
-				You are at the highest level.
+				60 levels over a span of 3 weeks. Nicely played, you! 
 
 			</h1>
 
@@ -20,8 +20,8 @@
 
 			<h1 class="Dagger colwhite">
 
-				Wait till your next challenge is set<br>
-
+				 Our congratulations goes out to all the winners!<br>
+				 Until next time, this is Team Incognito signing off :)
 
 			</h1>
 

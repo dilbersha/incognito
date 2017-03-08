@@ -87,12 +87,12 @@ class Pages extends CI_Controller {
                 } 
                 if($state==1)
                 {
-                    $data['title']='Sorry';//change to congratulations and top once last level is uploaded.
+                    $data['title']='Congratulations';//change to congratulations and top once last level is uploaded.
                     $page='update';
                 }
                 else
                 {
-                    $data['title']='Sorry';
+                    $data['title']='Congratulations';
                     $page='update';
                 }
             }                   
